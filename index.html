@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Converter</title>
+</head>
+<body>
+    <h1>PDF Converter</h1>
+    <form action="/convert" method="POST" enctype="multipart/form-data">
+        <label>Select PDF:</label><br>
+        <input type="file" name="pdf_file" accept="application/pdf" required><br><br>
+        
+        <label>Convert to:</label><br>
+        <input type="radio" name="output_format" value="jpeg" checked> JPEG<br>
+        <input type="radio" name="output_format" value="word"> Word (.docx)<br><br>
+
+        <input type="submit" value="Convert">
+    </form>
+</body>
+</html>
